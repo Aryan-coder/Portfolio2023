@@ -1,0 +1,65 @@
+
+.myphoto{
+    width: 200px;
+    border-radius: 100%;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .profile-card{
+    margin-top: -10%;
+    max-width: 300px;
+    border-radius: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+
+    i{
+      cursor: pointer;
+      color: white;
+      &:focus + .email-address{
+        opacity: 1;
+      }
+    } 
+  }
+  
+  .name{
+    margin-top: 10%;
+    font-size: 20px;
+  }
+  
+  .designation{
+    color: #9CA2B0;
+    margin-bottom: 10%;
+  }
+  
+  .icons{
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+ 
+
+  .email-address{
+    position: absolute;
+    transform: translate(60%, 40px);
+    font-size: 15px;
+    background-color: #303030;
+    padding: 10px;
+    border-radius: 0 100px 100px 100px;
+    opacity: 0;
+    transition: opacity .5s;
+
+  }

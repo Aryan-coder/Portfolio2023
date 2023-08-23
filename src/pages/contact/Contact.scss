@@ -1,0 +1,114 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    .row{
+        margin-left: -35%;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        color: skyblue;
+        width: 130px;
+       margin-left: auto;
+        margin-right: 20px;
+        gap: 5px;
+
+        .icon{
+            i{
+                color: white;
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            span{
+                font-size: 20px;
+                margin-left: -20px;
+                opacity: 0;
+                transition: margin .3s, opacity .5s;
+                color: white;
+            }
+
+            &:hover span{
+                opacity: 1;
+                margin-left: 10px;
+            }
+    
+        }
+    }
+    input{
+        background-color: #252525;
+        border-width: 0;
+        height: 40px;
+        color: white;
+        padding: 20px;
+
+        &:focus{
+            outline-color: blue;
+            outline-style: solid;
+        }
+    }
+
+    textarea{
+        height: 200px;
+        background-color: #252525;
+        border-width: 0;
+        color: white;
+        padding: 20px;
+
+        &:focus{
+            outline-color: blue;
+            outline-style: solid;
+        }
+    }
+
+}
+
+.w-100{
+    width: 100%;
+}
+
+
+.send-button{ 
+    width: 50%;
+    height: 100%;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: row;
+    width: 150%;
+    gap: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        .icons{
+            display: none;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            min-width: 60vh;
+        }
+
+        .send-button{
+            position: absolute;
+            height: 50px;
+            width: 150px;
+            top: 660px;
+            left: 30%;
+        }
+    }
+  }

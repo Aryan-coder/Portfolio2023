@@ -1,0 +1,30 @@
+
+.skills{
+    display: flex;
+    gap: 10%;
+    margin-top: -50px;
+  }
+  
+  .skill{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+    text-align: center;
+    gap: 5px;
+    transition: transform 1s;
+
+    i{
+        font-size: 40px;
+        color: skyblue;
+      }
+
+      span{
+        color: rgb(205, 240, 254);
+      }
+      
+      &:hover{
+        transform: rotate(-360deg);
+      }
+      
+  }
+  
