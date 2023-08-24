@@ -14,6 +14,15 @@ function App() {
 
   return (
     <div className="App">
+       {
+        screen.width < 800 ? 
+        <div className='incompatable-message' >
+          <h1>Welcome to my portfolio website! Currently, the website is best experienced on desktop or laptop devices.</h1>
+          <h1> I'm working on making it mobile-friendly too, so stay tuned for an optimized mobile version</h1>
+          <h1>In the meantime, Please access the site from a larger screen for the best viewing experience. Thank you for your understanding!</h1>
+        </div>
+        :
+        <>
         <Menu/>
         <Home/>
         <About/>
@@ -22,6 +31,8 @@ function App() {
         <Experience/>
         <Contact/>
         <Bye/>
+        </>
+       }
     </div>
   )
 }
