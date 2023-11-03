@@ -16,3 +16,19 @@ a.git-icon{
 video{
     background-color: #252525;
 }
+
+.projects{
+    height: 150vh;
+}
+
+.project{
+    height: fit-content;
+}
+
+.portfolio{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    translate: -15%;
+    z-index: 0;
+}

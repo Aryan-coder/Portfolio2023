@@ -38,4 +38,3 @@ function App() {
 }
 
 export default App
-//https://brittanychiang.com/#jobs

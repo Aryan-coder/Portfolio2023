@@ -2,8 +2,8 @@ import React from 'react'
 import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3, DiJqueryLogo, DiSass} from 'react-icons/di'
 import {BsFillBootstrapFill} from 'react-icons/bs'
-import {SiJavascript, SiReact, SiTypescript, SiRedux} from 'react-icons/si'
-import {TbBrandFirebase} from 'react-icons/tb'
+import {SiJavascript, SiReact, SiTypescript, SiRedux, SiTailwindcss} from 'react-icons/si'
+import {TbBrandFirebase, TbBrandNextjs} from 'react-icons/tb'
 import { Col, Container, Row } from 'react-bootstrap'
 import './Skills.scss'
 
@@ -25,6 +25,10 @@ export default function Skills() {
           <span>SASS</span>
         </Col>
         <Col className='skill' >
+          <i style={{animationDelay: '1.4s'}}><SiTailwindcss/></i>
+          <span>TailwindCSS</span>
+        </Col>
+        <Col className='skill' >
           <i style={{animationDelay: '1.4s'}}><BsFillBootstrapFill/></i>
           <span>Bootstrap</span>
         </Col>
@@ -34,7 +38,7 @@ export default function Skills() {
         </Col>
         <Col className='skill' >
           <i style={{animationDelay: '2s'}}><DiJqueryLogo/></i>
-          <span>Jquery</span>
+          <span>JQuery</span>
         </Col>
         <Col className='skill' >
           <i style={{animationDelay: '2.3s'}} ><SiTypescript/></i>
@@ -42,7 +46,11 @@ export default function Skills() {
         </Col>
         <Col className='skill' >
           <i style={{animationDelay: '2.3s'}} ><SiReact/></i>
-          <span>React</span>
+          <span>ReactJS</span>
+        </Col>
+        <Col className='skill' >
+          <i style={{animationDelay: '2.3s'}} ><TbBrandNextjs/></i>
+          <span>NextJS</span>
         </Col>
         <Col className='skill' >
           <i style={{animationDelay: '2.3s'}} ><SiRedux/></i>

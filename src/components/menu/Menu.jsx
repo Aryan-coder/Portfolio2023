@@ -10,7 +10,7 @@ import './Menu.scss'
 export default function Menu() {
 
     const handleScroll=(page)=>{
-        if(page == 'home') window.scrollTo(0,0);
+        if(page == 'home') document.getElementById(page).scrollIntoView({ behavior: 'smooth' });
         else
         document.getElementById(page).scrollIntoView({ behavior: 'smooth' });
     }

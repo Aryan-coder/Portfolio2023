@@ -10,6 +10,7 @@ import chatappImage2 from '../../asset/chatapp/2.png'
 import chatappImage3 from '../../asset/chatapp/3.png'
 import chatappImage4 from '../../asset/chatapp/4.png'
 import tictactoeVideo from '../../asset/tictactoe.mp4'
+import portfolioVideo from '../../asset/portfolio.mp4'
 import authVideo from '../../asset/auth.mp4'
 import {AiFillHtml5} from 'react-icons/ai'
 import ImageSlider from '../../components/slider/ImageSlider'
@@ -19,9 +20,9 @@ export default function Projects() {
 
  
   return (
-    <Container className='d-flex flex-column'>
+    <Container className='d-flex flex-column projects'>
         <h1 className='heading' id='project' >Projects</h1>
-        <Row className='projects' style={{display:'flex', position:'relative', gap: '50px'}} >
+        <Row className='projects' style={{display:'flex', position:'relative', gap: '50px', justifyContent: 'center'}} >
             <Col className='project' style={{position:'relative'}} >
             <Card className='card'>
             <ImageSlider images={[chatappImage1, chatappImage2, chatappImage3, chatappImage4]} />
@@ -51,7 +52,7 @@ export default function Projects() {
             </Col>  
 
 
-            <Col className='project' style={{position:'relative'}} >
+            <Col className='project' style={{position:'relative', zIndex: '1'}} >
             <Card className='card'>
             <video width="290px" height="180px" autoPlay loop muted >
 		          <source src={tictactoeVideo} type="video/mp4" />
@@ -85,7 +86,7 @@ export default function Projects() {
       <Card.Body>
         <Card.Title className='cart-title' >Authentication Page<a className='git-icon' href='https://github.com/Aryan-coder/AuthPage' target="_blank"><AiFillGithub/></a></Card.Title>
         <Card.Text className='cart-text' >   
-            Authentication page with slider to switch between Sign-in/Sign-up
+            Authentication page with slider to switch between Sign-in/Sign-up, and also change theme from day to night and vise versa 
         </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
@@ -99,6 +100,30 @@ export default function Projects() {
       <a href="https://aryan-coder.github.io/AuthPage/" target='_blank'>Open Live Preview</a>
       </Card.Body>
     </Card>
+            </Col>  
+            <Col className='project portfolio' >
+                  <Card className='card'>
+                  <video width="290px" height="180px" autoPlay loop muted >
+                    <source src={portfolioVideo} type="video/mp4" />
+                </video>
+            <Card.Body>
+              <Card.Title className='cart-title' >Personal Portfolio<a className='git-icon' href='https://github.com/Aryan-coder/Portfolio2023' target="_blank"><AiFillGithub/></a></Card.Title>
+              <Card.Text className='cart-text' >   
+              A digital portfolio is a carefully curated online collection of my best work, It serves as a dynamic and visually appealing showcase of my expertise. 
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item className='project-skills' >
+                <i><AiFillHtml5/></i>
+                <i><SiJavascript/></i>
+              <i><SiReact/></i>
+              <i><DiSass/></i>
+              </ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+            <a href="https://aryan-portfolio-670e4.web.app/" target='_blank'>Open Live Preview</a>
+            </Card.Body>
+          </Card>
             </Col>  
         </Row>
     </Container>
